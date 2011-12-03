@@ -16,9 +16,18 @@
 ?>
 <title><?php echo $path ?></title>
 <style><?php echo file_get_contents('style.css'); ?></style>
+<?php
+
+  # Include any custom scripts or styles you want to create here.
+  @include "custom/head.php";
+
+?>
 </head><body>
 <div class="container">
 <?php
+
+  # Include any custom headers you want to create here.
+  @include "custom/header.php";
 
   require('markdown.php');
 
@@ -30,6 +39,9 @@
   } else {
     echo Markdown($content);
   }
+
+  # Include any custom scripts or styles you want to create here.
+  @include "custom/footer.php";
 
 ?>
 </div>

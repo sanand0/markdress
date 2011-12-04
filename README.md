@@ -6,6 +6,14 @@ Markdress
 To render a Markdown file at <http://goo.gl/zTG1q>, visit
 <http://markdress.org/goo.gl/zTG1q>
 
+<form onsubmit="window.location+=document.forms[0].path.value.replace(/^.*:\/\//, '');return false;">
+ <label>
+  Type a Markdown URL:
+  <input name="path" placeholder="URL">
+ </label>
+ <button type="Submit">Render</button>
+</form>
+
 Alternatives
 ------------
 - [DropPages.com](http://droppages.com/) lets you share Dropbox files as web pages.

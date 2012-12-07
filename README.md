@@ -1,10 +1,11 @@
 Markdress
 =========
 
-[Markdress](http://markdress.org) lets you serve Markdown files as a website.
+Markdress lets you serve Markdown files as a website.
 
-To render a Markdown file at <http://goo.gl/zTG1q>, visit
-<http://markdress.org/goo.gl/zTG1q>
+This used to be hosted at <http://markdress.org> but not since Dec 2012.
+(To render a Markdown file at <http://goo.gl/zTG1q>, You would have visited
+<http://markdress.org/goo.gl/zTG1q>)
 
 <form onsubmit="window.location+=document.forms[0].path.value.replace(/^.*:\/\//, '');return false;">
  <label>
@@ -27,19 +28,14 @@ Feel free to use it. But there's no guarantee the site will remain forever.
 
 FAQ
 ---
-*Can I use Markdress with Dropbox?*
-
-Only with the `Public` folder in Dropbox. Add the public folder's link to
-`markdress.org`.
-
-*Can I use Markdress with GitHub, Bitbucket, etc?*
-
-Only f they have a http:// address (not https://). But these sites already
-render text markup as HTML in their Wikis. So why bother?
-
 *Can I use my own hosted version of Markdress?*
 
 Yes. Download from <https://github.com/sanand0/markdress>.
+
+*Can I use Markdress with GitHub, Bitbucket, etc?*
+
+Only if they have a http:// address (not https://). But these sites already
+render text markup as HTML in their Wikis. So why bother?
 
 *Does Markdress cache the URL?*
 

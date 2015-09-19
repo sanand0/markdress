@@ -4,16 +4,22 @@ Markdress
 Markdress lets you serve Markdown files as a website.
 
 This used to be hosted at <http://markdress.org> but not since Dec 2012.
-(To render a Markdown file at <http://goo.gl/zTG1q>, You would have visited
+(To render a Markdown file at <http://goo.gl/zTG1q>, you would have visited
 <http://markdress.org/goo.gl/zTG1q>)
 
-<form onsubmit="window.location+=document.forms[0].path.value.replace(/^.*:\/\//, '');return false;">
- <label>
-  Type a Markdown URL:
-  <input name="path" placeholder="URL">
- </label>
- <button type="Submit">Render</button>
-</form>
+Clone this repo and run it behind PHP on Apache.
+If this folder is at `/markdress/`, then `/markdress/goo.gl/zTG1q`
+will automatically load http://goo.gl/zTG1q
+
+Sample usage:
+
+    <form onsubmit="window.location+=document.forms[0].path.value.replace(/^.*:\/\//, '');return false;">
+      <label>
+        Type a Markdown URL:
+        <input name="path" placeholder="URL">
+      </label>
+      <button type="Submit">Render</button>
+    </form>
 
 Alternatives
 ------------
